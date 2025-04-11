@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint --no-error-on-unmatched-pattern",
+    "vercel-build": "next build",
+    "vercel-deploy": "vercel deploy --prod"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",

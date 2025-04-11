@@ -1,3 +1,78 @@
+# DentFlow Pro
+
+Modern Dental Practice Management
+
+## Vercel Deployment Instructions
+
+This project is optimized for deployment on Vercel. Follow these steps to deploy:
+
+### Option 1: Deploy from the Vercel Dashboard
+
+1. Push your code to a Git repository (GitHub, GitLab, or Bitbucket)
+2. Visit [Vercel Dashboard](https://vercel.com/dashboard)
+3. Click "New Project"
+4. Import your repository
+5. Configure the project:
+   - Framework Preset: Next.js
+   - Root Directory: ./
+   - Build Command: npm run build (default)
+   - Output Directory: .next (default)
+6. Set up environment variables (copy from .env.local)
+7. Click "Deploy"
+
+### Option 2: Deploy using Vercel CLI
+
+1. Install Vercel CLI:
+   ```
+   npm install -g vercel
+   ```
+
+2. Login to Vercel:
+   ```
+   vercel login
+   ```
+
+3. Deploy the project:
+   ```
+   npm run vercel-deploy
+   ```
+
+### Environment Variables
+
+Make sure to set these environment variables in the Vercel dashboard:
+
+- NEXT_PUBLIC_FIREBASE_API_KEY
+- NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
+- NEXT_PUBLIC_FIREBASE_PROJECT_ID
+- NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
+- NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
+- NEXT_PUBLIC_FIREBASE_APP_ID
+
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm run start
+```
+
+## Features
+
+- Modern dental practice management
+- Patient records management
+- Appointment scheduling
+- Invoice generation
+- Inventory management
+- Google authentication
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
